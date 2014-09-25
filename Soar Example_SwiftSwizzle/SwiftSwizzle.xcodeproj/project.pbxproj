@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA3E027C19D4D42400C5C907 /* Soar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3E027919D4D40C00C5C907 /* Soar.framework */; };
+		CA3E027D19D4D42400C5C907 /* Soar.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA3E027919D4D40C00C5C907 /* Soar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA6413AD19CDED7500A974FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6413AC19CDED7500A974FD /* AppDelegate.swift */; };
 		CA6413AF19CDED7500A974FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6413AE19CDED7500A974FD /* ViewController.swift */; };
 		CA6413B219CDED7500A974FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA6413B019CDED7500A974FD /* Main.storyboard */; };
@@ -16,8 +18,6 @@
 		CA6413D719CE078800A974FD /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6413D619CE078800A974FD /* CydiaSubstrate.framework */; };
 		CA89FB1F19D4CACA00449F30 /* CydiaSubstrate.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA6413D619CE078800A974FD /* CydiaSubstrate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CAE0F1E619D20BBE000F0079 /* Tweak.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE0F1E519D20BBE000F0079 /* Tweak.m */; };
-		CAE0F22619D30184000F0079 /* Soar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE0F22519D30184000F0079 /* Soar.framework */; };
-		CAE0F22819D301F3000F0079 /* Soar.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CAE0F22519D30184000F0079 /* Soar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,13 +38,14 @@
 			dstSubfolderSpec = 10;
 			files = (
 				CA89FB1F19D4CACA00449F30 /* CydiaSubstrate.framework in CopyFiles */,
-				CAE0F22819D301F3000F0079 /* Soar.framework in CopyFiles */,
+				CA3E027D19D4D42400C5C907 /* Soar.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CA3E027919D4D40C00C5C907 /* Soar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Soar.framework; sourceTree = "<group>"; };
 		CA6413A719CDED7500A974FD /* SwiftSwizzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSwizzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA6413AB19CDED7500A974FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA6413AC19CDED7500A974FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +60,6 @@
 		CA6413D619CE078800A974FD /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CydiaSubstrate.framework; sourceTree = "<group>"; };
 		CAE0F1E419D20BBE000F0079 /* Tweak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweak.h; sourceTree = "<group>"; };
 		CAE0F1E519D20BBE000F0079 /* Tweak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweak.m; sourceTree = "<group>"; };
-		CAE0F22519D30184000F0079 /* Soar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Soar.framework; path = "../../../Library/Developer/Xcode/DerivedData/Soar-cytfpjcjxshpnqdkqyygewtcepdl/Build/Products/Debug-iphoneos/Soar.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA6413D719CE078800A974FD /* CydiaSubstrate.framework in Frameworks */,
-				CAE0F22619D30184000F0079 /* Soar.framework in Frameworks */,
+				CA3E027C19D4D42400C5C907 /* Soar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +103,7 @@
 		CA6413A919CDED7500A974FD /* SwiftSwizzle */ = {
 			isa = PBXGroup;
 			children = (
-				CAE0F22519D30184000F0079 /* Soar.framework */,
+				CA3E027919D4D40C00C5C907 /* Soar.framework */,
 				CA6413D619CE078800A974FD /* CydiaSubstrate.framework */,
 				CA6413AC19CDED7500A974FD /* AppDelegate.swift */,
 				CA6413AE19CDED7500A974FD /* ViewController.swift */,
@@ -379,6 +379,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SwiftSwizzle",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Soar-cytfpjcjxshpnqdkqyygewtcepdl/Build/Products/Debug-iphoneos",
+					"/Users/baileyseymour/Developer/Library/Developer/Xcode/DerivedData/Soar-cytfpjcjxshpnqdkqyygewtcepdl/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = SwiftSwizzle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -401,6 +402,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SwiftSwizzle",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Soar-cytfpjcjxshpnqdkqyygewtcepdl/Build/Products/Debug-iphoneos",
+					"/Users/baileyseymour/Developer/Library/Developer/Xcode/DerivedData/Soar-cytfpjcjxshpnqdkqyygewtcepdl/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = SwiftSwizzle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;

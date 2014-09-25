@@ -1,0 +1,6 @@
+framework module Soar {
+  umbrella header "Soar.h"
+
+  export *
+  module * { export * }
+}
