@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA89FB2119D4CEDD00449F30 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CA89FB2019D4CEDD00449F30 /* LICENSE */; };
 		CAE0F1F719D2FF54000F0079 /* Soar.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE0F1F619D2FF54000F0079 /* Soar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CAE0F1FD19D2FF54000F0079 /* Soar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE0F1F119D2FF54000F0079 /* Soar.framework */; };
 		CAE0F20419D2FF54000F0079 /* SoarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE0F20319D2FF54000F0079 /* SoarTests.swift */; };
+		CAE0F20E19D2FFB2000F0079 /* Soar.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE0F20D19D2FFB2000F0079 /* Soar.m */; };
+		CAE0F21019D3002C000F0079 /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE0F20F19D3002C000F0079 /* CydiaSubstrate.framework */; };
+		CAE0F22A19D31D2A000F0079 /* NSTask.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE0F22919D31D06000F0079 /* NSTask.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +27,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA89FB2019D4CEDD00449F30 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		CAE0F1F119D2FF54000F0079 /* Soar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Soar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE0F1F519D2FF54000F0079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAE0F1F619D2FF54000F0079 /* Soar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Soar.h; sourceTree = "<group>"; };
 		CAE0F1FC19D2FF54000F0079 /* SoarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE0F20219D2FF54000F0079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAE0F20319D2FF54000F0079 /* SoarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoarTests.swift; sourceTree = "<group>"; };
+		CAE0F20D19D2FFB2000F0079 /* Soar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Soar.m; sourceTree = "<group>"; };
+		CAE0F20F19D3002C000F0079 /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CydiaSubstrate.framework; sourceTree = "<group>"; };
+		CAE0F22919D31D06000F0079 /* NSTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTask.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAE0F21019D3002C000F0079 /* CydiaSubstrate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				CAE0F1F619D2FF54000F0079 /* Soar.h */,
+				CA89FB2019D4CEDD00449F30 /* LICENSE */,
 				CAE0F1F419D2FF54000F0079 /* Supporting Files */,
 			);
 			path = Soar;
@@ -80,7 +90,10 @@
 		CAE0F1F419D2FF54000F0079 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CAE0F20F19D3002C000F0079 /* CydiaSubstrate.framework */,
 				CAE0F1F519D2FF54000F0079 /* Info.plist */,
+				CAE0F20D19D2FFB2000F0079 /* Soar.m */,
+				CAE0F22919D31D06000F0079 /* NSTask.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -110,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAE0F1F719D2FF54000F0079 /* Soar.h in Headers */,
+				CAE0F22A19D31D2A000F0079 /* NSTask.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA89FB2119D4CEDD00449F30 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAE0F20E19D2FFB2000F0079 /* Soar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,8 +339,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Soar",
+				);
 				INFOPLIST_FILE = Soar/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -338,8 +359,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Soar",
+				);
 				INFOPLIST_FILE = Soar/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -395,6 +421,7 @@
 				CAE0F20919D2FF54000F0079 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CAE0F20A19D2FF54000F0079 /* Build configuration list for PBXNativeTarget "SoarTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +430,7 @@
 				CAE0F20C19D2FF54000F0079 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
