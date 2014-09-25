@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA6413AD19CDED7500A974FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6413AC19CDED7500A974FD /* AppDelegate.swift */; };
+		CA6413AF19CDED7500A974FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6413AE19CDED7500A974FD /* ViewController.swift */; };
+		CA6413B219CDED7500A974FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA6413B019CDED7500A974FD /* Main.storyboard */; };
+		CA6413B419CDED7500A974FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6413B319CDED7500A974FD /* Images.xcassets */; };
+		CA6413B719CDED7500A974FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA6413B519CDED7500A974FD /* LaunchScreen.xib */; };
+		CA6413C319CDED7500A974FD /* SwiftSwizzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6413C219CDED7500A974FD /* SwiftSwizzleTests.swift */; };
+		CA6413D719CE078800A974FD /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6413D619CE078800A974FD /* CydiaSubstrate.framework */; };
+		CA89FB1F19D4CACA00449F30 /* CydiaSubstrate.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA6413D619CE078800A974FD /* CydiaSubstrate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CAE0F1E619D20BBE000F0079 /* Tweak.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE0F1E519D20BBE000F0079 /* Tweak.m */; };
+		CAE0F22619D30184000F0079 /* Soar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE0F22519D30184000F0079 /* Soar.framework */; };
+		CAE0F22819D301F3000F0079 /* Soar.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CAE0F22519D30184000F0079 /* Soar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA6413BD19CDED7500A974FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA64139F19CDED7500A974FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA6413A619CDED7500A974FD;
+			remoteInfo = SwiftSwizzle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CAE0F22719D301E7000F0079 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CA89FB1F19D4CACA00449F30 /* CydiaSubstrate.framework in CopyFiles */,
+				CAE0F22819D301F3000F0079 /* Soar.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CA6413A719CDED7500A974FD /* SwiftSwizzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSwizzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6413AB19CDED7500A974FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA6413AC19CDED7500A974FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA6413AE19CDED7500A974FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA6413B119CDED7500A974FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA6413B319CDED7500A974FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CA6413B619CDED7500A974FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CA6413BC19CDED7500A974FD /* SwiftSwizzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSwizzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6413C119CDED7500A974FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA6413C219CDED7500A974FD /* SwiftSwizzleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSwizzleTests.swift; sourceTree = "<group>"; };
+		CA6413D219CE05DF00A974FD /* SwiftSwizzle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftSwizzle-Bridging-Header.h"; sourceTree = "<group>"; };
+		CA6413D619CE078800A974FD /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CydiaSubstrate.framework; sourceTree = "<group>"; };
+		CAE0F1E419D20BBE000F0079 /* Tweak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweak.h; sourceTree = "<group>"; };
+		CAE0F1E519D20BBE000F0079 /* Tweak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweak.m; sourceTree = "<group>"; };
+		CAE0F22519D30184000F0079 /* Soar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Soar.framework; path = "../../../Library/Developer/Xcode/DerivedData/Soar-cytfpjcjxshpnqdkqyygewtcepdl/Build/Products/Debug-iphoneos/Soar.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA6413A419CDED7500A974FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6413D719CE078800A974FD /* CydiaSubstrate.framework in Frameworks */,
+				CAE0F22619D30184000F0079 /* Soar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6413B919CDED7500A974FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA64139E19CDED7500A974FD = {
+			isa = PBXGroup;
+			children = (
+				CA6413A919CDED7500A974FD /* SwiftSwizzle */,
+				CA6413BF19CDED7500A974FD /* SwiftSwizzleTests */,
+				CA6413A819CDED7500A974FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA6413A819CDED7500A974FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA6413A719CDED7500A974FD /* SwiftSwizzle.app */,
+				CA6413BC19CDED7500A974FD /* SwiftSwizzleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA6413A919CDED7500A974FD /* SwiftSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				CAE0F22519D30184000F0079 /* Soar.framework */,
+				CA6413D619CE078800A974FD /* CydiaSubstrate.framework */,
+				CA6413AC19CDED7500A974FD /* AppDelegate.swift */,
+				CA6413AE19CDED7500A974FD /* ViewController.swift */,
+				CAE0F1E419D20BBE000F0079 /* Tweak.h */,
+				CAE0F1E519D20BBE000F0079 /* Tweak.m */,
+				CA6413B019CDED7500A974FD /* Main.storyboard */,
+				CA6413B319CDED7500A974FD /* Images.xcassets */,
+				CA6413B519CDED7500A974FD /* LaunchScreen.xib */,
+				CA6413AA19CDED7500A974FD /* Supporting Files */,
+				CA6413D219CE05DF00A974FD /* SwiftSwizzle-Bridging-Header.h */,
+			);
+			path = SwiftSwizzle;
+			sourceTree = "<group>";
+		};
+		CA6413AA19CDED7500A974FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA6413AB19CDED7500A974FD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA6413BF19CDED7500A974FD /* SwiftSwizzleTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA6413C219CDED7500A974FD /* SwiftSwizzleTests.swift */,
+				CA6413C019CDED7500A974FD /* Supporting Files */,
+			);
+			path = SwiftSwizzleTests;
+			sourceTree = "<group>";
+		};
+		CA6413C019CDED7500A974FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA6413C119CDED7500A974FD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA6413A619CDED7500A974FD /* SwiftSwizzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA6413C619CDED7500A974FD /* Build configuration list for PBXNativeTarget "SwiftSwizzle" */;
+			buildPhases = (
+				CA6413A319CDED7500A974FD /* Sources */,
+				CA6413A419CDED7500A974FD /* Frameworks */,
+				CA6413A519CDED7500A974FD /* Resources */,
+				CAE0F22719D301E7000F0079 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftSwizzle;
+			productName = SwiftSwizzle;
+			productReference = CA6413A719CDED7500A974FD /* SwiftSwizzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA6413BB19CDED7500A974FD /* SwiftSwizzleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA6413C919CDED7500A974FD /* Build configuration list for PBXNativeTarget "SwiftSwizzleTests" */;
+			buildPhases = (
+				CA6413B819CDED7500A974FD /* Sources */,
+				CA6413B919CDED7500A974FD /* Frameworks */,
+				CA6413BA19CDED7500A974FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA6413BE19CDED7500A974FD /* PBXTargetDependency */,
+			);
+			name = SwiftSwizzleTests;
+			productName = SwiftSwizzleTests;
+			productReference = CA6413BC19CDED7500A974FD /* SwiftSwizzleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA64139F19CDED7500A974FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Bailey Seymour";
+				TargetAttributes = {
+					CA6413A619CDED7500A974FD = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = CMADB5PKU7;
+					};
+					CA6413BB19CDED7500A974FD = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = CA6413A619CDED7500A974FD;
+					};
+				};
+			};
+			buildConfigurationList = CA6413A219CDED7500A974FD /* Build configuration list for PBXProject "SwiftSwizzle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA64139E19CDED7500A974FD;
+			productRefGroup = CA6413A819CDED7500A974FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA6413A619CDED7500A974FD /* SwiftSwizzle */,
+				CA6413BB19CDED7500A974FD /* SwiftSwizzleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA6413A519CDED7500A974FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6413B219CDED7500A974FD /* Main.storyboard in Resources */,
+				CA6413B719CDED7500A974FD /* LaunchScreen.xib in Resources */,
+				CA6413B419CDED7500A974FD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6413BA19CDED7500A974FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA6413A319CDED7500A974FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE0F1E619D20BBE000F0079 /* Tweak.m in Sources */,
+				CA6413AF19CDED7500A974FD /* ViewController.swift in Sources */,
+				CA6413AD19CDED7500A974FD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6413B819CDED7500A974FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6413C319CDED7500A974FD /* SwiftSwizzleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA6413BE19CDED7500A974FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA6413A619CDED7500A974FD /* SwiftSwizzle */;
+			targetProxy = CA6413BD19CDED7500A974FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA6413B019CDED7500A974FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA6413B119CDED7500A974FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA6413B519CDED7500A974FD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA6413B619CDED7500A974FD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA6413C419CDED7500A974FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA6413C519CDED7500A974FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA6413C719CDED7500A974FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftSwizzle",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Soar-cytfpjcjxshpnqdkqyygewtcepdl/Build/Products/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = SwiftSwizzle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSwizzle/SwiftSwizzle-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA6413C819CDED7500A974FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftSwizzle",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Soar-cytfpjcjxshpnqdkqyygewtcepdl/Build/Products/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = SwiftSwizzle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSwizzle/SwiftSwizzle-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		CA6413CA19CDED7500A974FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftSwizzleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftSwizzle.app/SwiftSwizzle";
+			};
+			name = Debug;
+		};
+		CA6413CB19CDED7500A974FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftSwizzleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftSwizzle.app/SwiftSwizzle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA6413A219CDED7500A974FD /* Build configuration list for PBXProject "SwiftSwizzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6413C419CDED7500A974FD /* Debug */,
+				CA6413C519CDED7500A974FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA6413C619CDED7500A974FD /* Build configuration list for PBXNativeTarget "SwiftSwizzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6413C719CDED7500A974FD /* Debug */,
+				CA6413C819CDED7500A974FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA6413C919CDED7500A974FD /* Build configuration list for PBXNativeTarget "SwiftSwizzleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6413CA19CDED7500A974FD /* Debug */,
+				CA6413CB19CDED7500A974FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA64139F19CDED7500A974FD /* Project object */;
+}
